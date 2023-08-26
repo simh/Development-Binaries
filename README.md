@@ -1,24 +1,17 @@
 # Simh Development Binaries
 
-This repository used to contain binaries for the successful CI build activities produced each time one or more commits are pushed to the master branch of the https://github.com/simh/simh repo.
+This repository contains binaries for the successful CI build activities produced each time one or more commits are pushed to the master branch of the https://github.com/simh/simh repository.
 
-Each file in the repo is a zip file containing all of the simulator binaries built for one of the CI build targets (Ubuntu 20.04, macOS Monterey, and Windows).  The Ubuntu and the macOS binaries are built on x86 system and may run on current OS systems.  The Windows binaries will run on any Windows systems since XP.
+Each file in this repository is a zip file (or tarball) containing all of the simulator binaries built for one of the CI build platforms (Ubuntu 16.04, macOS BigSur, and Windows).    The Windows binaries will definitely run on any Windows systems since XP.  The Ubuntu and the macOS binaries are built on x86 system and may run on the current OS versions of these systems.
 
-Now it contains directions about where to find the Windows binaries for each commit that has been pushed to the https://github.com/simh/simh repo master branch.
+The latest binary build for [Windows is here](https://github.com/simh/Development-Binaries/blob/master/simh-2023-08-05_19-37-16-Windows-Win32-4.0-Current-412385f9.zip?raw=true), [Linux is here](https://github.com/simh/Development-Binaries/blob/master/simh-2023-08-05_15-24-19-Linux-x86_64-4.0-Current-412385f9.tgz?raw=true), and for [macOS is here](https://github.com/simh/Development-Binaries/blob/master/simh-2023-08-05_13-42-50-macOS-i386-4.0-Current-412385f9.tgz?raw=true).
 
-To get the latests Windows Binaries, follow the directions below.  These binaries will run on all versions of Windows from XP onward.
+To pickup a particular binary build for your platform, click on the interesting platform build results on the web UI above and on the right side of the resulting screen click on the  ![alt text](https://github.com/simh/Development-Binaries/blob/master/DownloadRawFile.png?raw=true) button which has the hover highlight text as "Download raw file".   Save the resulting downloaded file and extract the simulator binary(ies) you are interested in.
+
+All versions of Windows on x86 systems back to XP including both 32bit and 64bit OS versions can run any of these simulators.
+
+On macOS, when using any of the pre-built simulators, you will need to allow specific downloaded apps for the simulator(s) you want to use.  This is done in "System Preferences->Security & Privacy->General".  If you're not comfortable with this or you have a different OS version or a non x86 machine, you can readily build these simulators locally.
+
+On Linux, you may have a different Linux distribution or an different architecture machine, you can easily build locally as well.
 
 If issues are noticed with the behavior of any simulator, please create an issue at https://github.com/simh/simh/issues describing the problem, or send a note to the simh mailing list.  Please be sure to identify which binary demonstrates the issue and which commit introduced the problem.
-
-First Visit https://github.com/simh/simh
-
-
-Next: Pick the particular commit you're interested in getting the Windows binaries for.
-
-
-
-Next: Click on the 1 in the artifacts column.
-
-
-Next: Click on the artifact name to download the appropriate zip file.
-
